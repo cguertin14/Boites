@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Boite.cs" />
+    <Compile Include="Cadre.cs" />
     <Compile Include="ComboHorizontal.cs" />
     <Compile Include="ComboVertical.cs" />
     <Compile Include="IBoite.cs" />

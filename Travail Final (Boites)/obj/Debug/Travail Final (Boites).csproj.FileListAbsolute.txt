@@ -1,0 +1,7 @@
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\bin\Debug\Travail Final (Boites).exe.config
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\bin\Debug\Travail Final (Boites).exe
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\bin\Debug\Travail Final (Boites).pdb
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\obj\Debug\Travail Final (Boites).csprojAssemblyReference.cache
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\obj\Debug\Travail Final (Boites).csproj.CoreCompileInputs.cache
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\obj\Debug\Travail Final (Boites).exe
+C:\Users\guertz\Google Drive\Session 6\TechnoNouvelle\Boites\Travail Final (Boites)\obj\Debug\Travail Final (Boites).pdb
