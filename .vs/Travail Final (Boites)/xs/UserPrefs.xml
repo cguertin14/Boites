@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{95570075-B043-4C3C-BD33-4058C6AAC995}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Travail Final (Boites)/Cadre.cs">
+    <Files>
+      <File FileName="Travail Final (Boites)/IBoite.cs" Line="1" Column="1" />
+      <File FileName="Travail Final (Boites)/Boite.cs" Line="26" Column="10" />
+      <File FileName="Travail Final (Boites)/Cadre.cs" Line="1" Column="1" />
+      <File FileName="Travail Final (Boites)/ComboHorizontal.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Travail_220Final_220_228Boites_229 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
