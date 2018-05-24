@@ -15,7 +15,7 @@ namespace Travail_Final__Boites_
             boite = b;
         }
 
-        public List<string> Build()
+        private List<string> Build()
         {
             if (!boite.Lignes.Any()) { return GetEmptyCadre(); }
             var buildingList = new List<string>();
@@ -28,18 +28,18 @@ namespace Travail_Final__Boites_
             return buildingList;
         }
 
-        public string GetTrimEnd(string ligne)
+        private string GetTrimEnd(string ligne)
         {
-            return new StringBuilder().Append(' ', boite.Largeur - ligne.Count).Append("|");
+            return new StringBuilder().Append(' ', boite.Largeur - ligne.Count()).Append("|").ToString();
         }
 
-        public string GetFirstOrLastLine()
+        private string GetFirstOrLastLine()
         {
             StringBuilder stringBuilder = new StringBuilder();
             return stringBuilder.Append("+").Append('-', boite.Lignes.Aggregate("", (max, cur) => max.Length > cur.Length ? max : cur).Count()).Append("+").ToString();
         }
 
-        public List<string> GetEmptyCadre()
+        private List<string> GetEmptyCadre()
         {
             return new List<string> { "++", "++" };
         }
