@@ -10,28 +10,42 @@ namespace Travail_Final__Boites_
     public class Boite : IEnumerable
     {
         private List<string> lignes;
+        private int hauteur, largeur;
+
+        public List<string> Lignes => lignes;
+        public int Largeur => largeur;
+        public int Hauteur => hauteur;
+        public bool isEmpty => !lignes.Any();
 
         public Boite()
         {
             lignes = new List<string>();
+            SetDimensions();
         }
 
         public Boite(string texte)
         {
             lignes = texte.Split('\n').ToList();
+            SetDimensions();
         }
 
         public Boite(ComboVertical comboVertical)
         {
             lignes = new List<string>();
+            SetDimensions();
         }
 
         public Boite(ComboHorizontal comboHorizontal)
         {
             lignes = new List<string>();
+            SetDimensions();
         }
 
-        public bool isEmpty => !lignes.Any();
+        public void SetDimensions()
+        {
+            hauteur = lignes.Count;
+            largeur = lignes.OrderByDescending(ligne => ligne.Length).First().Length;
+        }
 
         public void Redimensionner()
         {
@@ -45,11 +59,6 @@ namespace Travail_Final__Boites_
 
         public static void Afficher(Boite boite)
         {
-            if (boite.isEmpty)
-            {
-                
-            }
-
             foreach (var ligne in boite)
                 Console.WriteLine(boite.ToCadre());
         }
