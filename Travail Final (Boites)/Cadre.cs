@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Travail_Final__Boites_
 {
-    public class ComboVertical : IBoite
+    public class Cadre
     {
-        public ComboVertical(Boite b1, Boite b2)
-        {
+        private Boite boite;
 
+        public Cadre(Boite b)
+        {
+            boite = b;
+        }
+
+        override public string ToString()
+        {
+            
         }
     }
 }
