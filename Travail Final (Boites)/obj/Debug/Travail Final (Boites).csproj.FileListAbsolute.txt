@@ -1,0 +1,6 @@
+/Users/Guijet/Desktop/Boites/Travail Final (Boites)/bin/Debug/Travail Final (Boites).exe.config
+/Users/Guijet/Desktop/Boites/Travail Final (Boites)/bin/Debug/Travail Final (Boites).exe
+/Users/Guijet/Desktop/Boites/Travail Final (Boites)/bin/Debug/Travail Final (Boites).pdb
+/Users/Guijet/Desktop/Boites/Travail Final (Boites)/obj/Debug/Travail Final (Boites).csproj.CoreCompileInputs.cache
+/Users/Guijet/Desktop/Boites/Travail Final (Boites)/obj/Debug/Travail Final (Boites).exe
+/Users/Guijet/Desktop/Boites/Travail Final (Boites)/obj/Debug/Travail Final (Boites).pdb
