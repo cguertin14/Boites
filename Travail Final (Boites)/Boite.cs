@@ -15,6 +15,7 @@ namespace Travail_Final__Boites_
         public List<string> Lignes => lignes;
         public int Largeur => largeur;
         public int Hauteur => hauteur;
+
         public bool isEmpty => !lignes.Any();
 
         public Boite()
