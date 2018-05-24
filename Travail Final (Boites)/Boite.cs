@@ -15,7 +15,6 @@ namespace Travail_Final__Boites_
         public List<string> Lignes => lignes;
         public int Largeur => largeur;
         public int Hauteur => hauteur;
-
         public bool isEmpty => !lignes.Any();
 
         public Boite()
@@ -32,7 +31,7 @@ namespace Travail_Final__Boites_
 
         public Boite(ComboVertical comboVertical)
         {
-            lignes = new List<string>();
+            lignes = comboVertical.First.Lignes.Concat(comboVertical.Second.Lignes).ToList();
             SetDimensions();
         }
 
@@ -44,13 +43,8 @@ namespace Travail_Final__Boites_
 
         public void SetDimensions()
         {
-            hauteur = lignes.Count;
-            largeur = lignes.OrderByDescending(ligne => ligne.Length).First().Length;
-        }
-
-        public void Redimensionner()
-        {
-
+            hauteur = lignes.Any() ? lignes.Count : 0;
+            largeur = lignes.Any() ? lignes.OrderByDescending(ligne => ligne.Length).First().Length : 0;
         }
 
         public Cadre ToCadre()
@@ -60,8 +54,7 @@ namespace Travail_Final__Boites_
 
         public static void Afficher(Boite boite)
         {
-            foreach (var ligne in boite)
-                Console.WriteLine(boite.ToCadre());
+            Console.WriteLine(boite.ToCadre());
         }
 
         IEnumerator IEnumerable.GetEnumerator()

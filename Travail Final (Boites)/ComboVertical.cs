@@ -8,9 +8,14 @@ namespace Travail_Final__Boites_
 {
     public class ComboVertical : IBoite
     {
+        private Boite first, second;
+        public  Boite First => first;
+        public  Boite Second => second;
+
         public ComboVertical(Boite b1, Boite b2)
         {
-
+            first = b1;
+            second = b2;
         }
     }
 }
