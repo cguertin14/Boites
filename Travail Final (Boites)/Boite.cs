@@ -7,31 +7,56 @@ using System.Threading.Tasks;
 
 namespace Travail_Final__Boites_
 {
-    class Boite
+    public class Boite : IEnumerable
     {
+        private List<string> lignes;
+
         public Boite()
         {
-
+            lignes = new List<string>();
         }
 
-        public Boite(String texte)
+        public Boite(string texte)
         {
-
+            lignes = texte.Split('\n').ToList();
         }
 
         public Boite(ComboVertical comboVertical)
         {
-
+            lignes = new List<string>();
         }
 
         public Boite(ComboHorizontal comboHorizontal)
         {
+            lignes = new List<string>();
+        }
+
+        public bool isEmpty => !lignes.Any();
+
+        public void Redimensionner()
+        {
 
         }
 
-        public static void Afficher(Boite other)
+        public Cadre ToCadre()
         {
+            return new Cadre(this);
+        }
 
+        public static void Afficher(Boite boite)
+        {
+            if (boite.isEmpty)
+            {
+                
+            }
+
+            foreach (var ligne in boite)
+                Console.WriteLine(boite.ToCadre());
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return lignes.GetEnumerator();
         }
     }
 }
